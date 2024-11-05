@@ -23,6 +23,34 @@
             Console.WriteLine("The decimal Max is " + Math.Max(dNum1, dNum2) + " The decimal Min is " + Math.Min(dNum1, dNum2));
             Console.WriteLine("The double Max is " + Math.Max(dubNum1, dubNum2) + " The double Min is " + Math.Min(dubNum1, dubNum2));
 
+            // 3. and 4. Write a C# Sharp program to print the sum of two numbers and the result of dividing two numbers.
+            // Prompt the user to enter the numbers
+
+            Console.WriteLine("For an example of summation and division");
+
+            Console.WriteLine("Enter the first number.");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter the Second number.");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            double sum = num1 + num2;
+            Console.WriteLine("\nThe summation of the two numbers is: " + sum);
+
+            double div;
+
+            if (num2 != 0) { 
+                div = num1 / num2;
+                Console.WriteLine("\nThe first number divided by the second is: " + div);
+            }
+            else { 
+                Console.WriteLine("\nERROR: Cannot divide by 0 as it will result in undefined");
+            }
+
+            
+            
+
+
 
         }
     }
